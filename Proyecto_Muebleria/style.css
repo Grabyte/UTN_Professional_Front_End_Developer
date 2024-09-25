@@ -1,0 +1,94 @@
+/* Clases generales */
+img {
+    object-fit: cover;
+}
+
+h2 {
+    font-family: "Lexend Exa", sans-serif;
+}
+
+ul {
+    line-height: 1.8;
+}
+
+li {
+    list-style-type: none;
+}
+
+/* Clases genericas */
+.bg-1 {
+    background-color: #DADDE2;
+}
+
+.bg-2 {
+    background-color: #C6C6C6;
+}
+
+.fz-1 {
+    font-size: x-large;
+}
+
+.fz-2 {
+    font-size: larger;
+}
+
+/* Clases especificas y pseudo clases */
+.card {
+    min-height: 35vh;
+    height: 100%;
+}
+
+.card img {
+    min-height: 35vh;
+    height: 100%
+}
+
+.card-text {
+    /*De mi para mi: Esta es una forma comoda de limitar la cantidad de lineas de texto que puede llegar a tener uno
+    pero a la larga no es la mejor ya que no es compatible con todos los navegadores, puede ser util, pero no es tan escalable, lo mejor es buscar
+    otras alternativas, combinar multiples forma de que no se rompan las cosas por el texto o utilizar JS para lograr un resulta similar */
+    display: -webkit-box;
+    -webkit-line-clamp: 7; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.lc-1 ul li a {
+    display: inline-block;
+    color: black;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+    font-size: large;
+}
+
+.lc-1 ul li a:hover {
+    transform: scale(1.15);
+    color: #4B4A54;
+}
+
+.lc-1 ul li a i:hover {
+    transform: scale(1.25);
+}
+
+/* Clases para los iconos de fontawesome */
+.fa-square-instagram {
+    background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.fa-square-facebook {
+    color: #1877F2;
+}
+
+.fa-square-twitter {
+    color: #1DA1F2;
+}
+
+.fa-location-dot{
+    background: radial-gradient(circle at 100% 90%, #4285F4, #34A853, #FBBC05, #EA4335);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+

@@ -1,0 +1,496 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Proyecto_Itati</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/9486578ead.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <nav class="navbar bg-dark-subtle border-bottom border-body navbar-expand-lg" data-bs-theme="dark">
+        <div class="container-fluid">
+            <!-- Logo de la Mueblería, alineado a la izquierda -->
+            <a class="navbar-brand mb-0 h1" href="#">Mueblería Itati</a>
+            <!-- Botón del menú de hamburguesa, alineado a la derecha -->
+            <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <!-- Elementos de navegación, colapsables -->
+            <div class="collapse navbar-collapse col-10" id="navbarSupportedContent">
+                <!-- Dropdown para "Productos" -->
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-light" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Productos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Cocina</a></li>
+                            <li><a class="dropdown-item" href="#">Comedor</a></li>
+                            <li><a class="dropdown-item" href="#">Dormitorio</a></li>
+                            <li><a class="dropdown-item" href="#">Living</a></li>
+                            <li><a class="dropdown-item" href="#">Baño</a></li>
+                            <li><a class="dropdown-item" href="#">Exterior</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-light" href="#">Sobre Nosotros</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>    
+    
+    <header class="bg-1">
+        <div class="container-fluid pb-5 pt-5">
+            <div class="row align-items-center">
+                <div class="col-xl-7">
+                    <img src="./images/Header_2.jpg" class="img-fluid himg" alt="Header">
+                </div>
+                <div class="col-xl-4 offset-xl-1 pt-4 m-auto">
+                    <h1 class="text-center">Calidad y comodidad</h1>
+                    <h5 class="text-center">Unidos desde el 2004</h5>
+                    <p class="fz-1 pt-1 d-none d-md-block">Fabricando los muebles de tus sueños con materiales de la mejor calidad! Contamos con gran cantidad de tipos de maderas para los diversos muebles y ambientes de tu hogar, maderas blandas, maderas duras e importadas. <br class="d-sm-none"> Te invitamos a conocer la calidad de los mismos en nuestro local.</p>
+                    <p class="fz-1 pt-1 d-md-none text-center">Fabricando los muebles de tus sueños con materiales de la mejor calidad!</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container-fluid p-3">
+        <h2 class="text-center">20% Off efectivo en tienda / 10% Off transferencia bancaria <br> Hasta 9 Cuotas Sin Interés</h2>
+    </div>
+
+    <main class="bg-1">
+        <section class="container-fluid p-5">
+            <div class="row pb-3 pt-3 text-center">
+                <!-- Nota de Gabry para el futuro: a utilizar tarjetas de bootstrap para armar secciones de este tipo hay que tener presente que por cada "fila" que tengas tenes que tener tu propio div con la clase "row" para definir la cantidad de columnas X/12 que van a ocupar los elementos dentro de esa misma fila utilizando la clase "col"-->
+                <div class="col-lg-6 col-xxl-4 pb-4">
+                    <div class="card d-flex flex-column">
+                        <div class="row">
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="./images/cocinalargo_2.jpg" class="img-fluid rounded-start" alt="Cocina">
+                            </div>
+                            <div class="d-lg-none col-md-7">
+                                <img src="./images/cocina.jfif" class="img-fluid rounded-start" alt="Cocina">
+                            </div>
+                            <div class="col-lg-7 col-md-5">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <h4 class="card-title">Cocina</h4>
+                                    <hr class="mb-3">
+                                    <p class="card-text text-start flex-grow">Muebles de cocina que combinan funcionalidad y estilo. Gabinetes modulares, islas y estantes ofrecen soluciones prácticas para una preparación de alimentos eficiente y un almacenamiento organizado</p>
+                                    <div class="d-flex justify-content-center mt-auto">
+                                        <a href="#" class="btn btn-dark">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 pb-4">
+                    <div class="card d-flex flex-column">
+                        <div class="row flex-row-reverse flex-lg-row">
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="./images/comedorlargo.jpg" class="img-fluid rounded-start" alt="Comedor">
+                            </div>
+                            <div class="d-lg-none col-md-7">
+                                <img src="./images/comedor.jfif" class="img-fluid rounded-start" alt="Comedor">
+                            </div>
+                            <div class="col-lg-7 col-md-5">
+                                <div class="card-body d-flex flex-column h-100">
+                                    <h4 class="card-title">Comedor</h4>
+                                    <hr class="mb-3">
+                                    <p class="card-text text-start flex-grow">Muebles para comedor que ofrecen elegancia y confort. Desde mesas extensibles hasta vitrinas, brindan un espacio ideal para disfrutar comidas y reuniones familiares cómodamente.</p>
+                                    <div class="d-flex justify-content-center mt-auto">
+                                        <a href="#" class="btn btn-dark">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-xxl-4 pb-4">
+                    <div class="card d-flex flex-column">
+                        <div class="row">
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="./images/dormitoriolargo2.jpg" class="img-fluid rounded-start" alt="Dormitorio">
+                            </div>
+                            <div class="d-lg-none col-md-7">
+                                <img src="./images/dormitorio.jfif" class="img-fluid rounded-start" alt="Dormitorio">
+                            </div>
+                            <div class="col-lg-7 col-md-5">
+                                <div class="card-body card-body d-flex flex-column h-100">
+                                    <h4 class="card-title">Dormitorio</h4>
+                                    <hr class="mb-3">
+                                    <p class="card-text text-start flex-grow">Muebles de dormitorio que fusionan estilo y confort. Con camas cómodas, armarios espaciosos y mesas de noche funcionales, crean un ambiente relajante y organizado para el descanso y el orden.</p>
+                                    <div class="d-flex justify-content-center mt-auto">
+                                        <a href="#" class="btn btn-dark">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            
+                <!-- Nota de Gabry para el futuro: Por ejemplo arriba terminamos de definir la primera fila y sus columnas utilizando la clase de "cards/tarjetas" para poder colocar imagenes con texto a un lado aplicando el mismo procedimiento que dentro de un espacio definido podemos aplicar "row" y luego "col" para ocupar una X/12 columnas dentro de ese espacio. -->
+                <div class="col-lg-6 col-xxl-4 mb-4">
+                    <div class="card d-flex flex-column">
+                        <div class="row flex-row-reverse flex-lg-row">
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="./images/livinglargo.jpg" class="img-fluid rounded-start" alt="Living">
+                            </div>
+                            <div class="d-lg-none col-md-7">
+                                <img src="./images/liviing.jfif" class="img-fluid rounded-start" alt="Living">
+                            </div>
+                            <div class="col-lg-7 col-md-5">
+                                <div class="card-body card-body d-flex flex-column h-100">
+                                    <h4 class="card-title">Living</h4>
+                                    <hr class="mb-3">
+                                    <p class="card-text text-start flex-grow">Muebles para el living que aportan confort y diseño. Sofás modulares, mesas de centro elegantes y estanterías funcionales transforman tu sala en un espacio acogedor y moderno para relajarte o recibir visitas.</p>
+                                    <div class="d-flex justify-content-center mt-auto">
+                                        <a href="#" class="btn btn-dark">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-6 col-xxl-4 mb-4">
+                    <div class="card d-flex flex-column">
+                        <div class="row">
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="./images/bañolargo_1.jpg" class="img-fluid rounded-start" alt="Baño">
+                            </div>
+                            <div class="d-lg-none col-md-7">
+                                <img src="./images/baño_1.jfif" class="img-fluid rounded-start" alt="Baño">
+                            </div>
+                            <div class="col-lg-7 col-md-5">
+                                <div class="card-body card-body d-flex flex-column h-100">
+                                    <h4 class="card-title">Baño</h4>
+                                    <hr class="mb-3">
+                                    <p class="card-text text-start flex-grow">Muebles de baño que combinan funcionalidad y estilo. Incluyen lavabos con almacenamiento integrado, espejos iluminados y estanterías resistentes a la humedad, creando un ambiente elegante y organizado.</p>
+                                    <div class="d-flex justify-content-center mt-auto">
+                                        <a href="#" class="btn btn-dark">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <div class="col-lg-6 col-xxl-4 mb-4">
+                    <div class="card d-flex flex-column">
+                        <div class="row flex-row-reverse flex-lg-row">
+                            <div class="col-lg-5 d-none d-lg-block">
+                                <img src="./images/exteriorlargo.jpg" class="img-fluid rounded-start" alt="Exterior">
+                            </div>
+                            <div class="d-lg-none col-md-7">
+                                <img src="./images/exterior.jfif" class="img-fluid rounded-start" alt="Exterior">
+                            </div>
+                            <div class="col-lg-7 col-md-5">
+                                <div class="card-body card-body d-flex flex-column h-100">
+                                    <h4 class="card-title">Exterior</h4>
+                                    <hr class="mb-3">
+                                    <p class="card-text text-start flex-grow">Muebles para exteriores diseñados para resistir las inclemencias del tiempo y ofrecer confort. Incluyen sillas reclinables, mesas de patio y sofás a prueba de agua, ideales para disfrutar del aire libre en terrazas, jardines o balcones.</p>
+                                    <div class="d-flex justify-content-center mt-auto">
+                                        <a href="#" class="btn btn-dark">Ver más</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <article class="container-fluid bg-white p-3">
+            <h2 class="text-center">La mayor variedad de muebles <br> en un solo lugar.</h2>
+        </article>
+
+        <!-- Inicio del carrusel de 3 imagenes -->
+        <div class="row p-5">
+            <div class="col-md-4 col-lg-4 d-none d-md-block">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/cocina.jfif" class="d-block w-100" alt="cocina">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/cocina_1.jfif" class="d-block w-100" alt="cocina">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/cocina_2.jpg" class="d-block w-100" alt="cocina">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/liviing.jfif" class="d-block w-100" alt="living">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/living2.jpg" class="d-block w-100" alt="living">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/living3.jpg" class="d-block w-100" alt="living">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-4 d-none d-md-block">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/comedor.jfif" class="d-block w-100" alt="comedor">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/comedor_2.jpg" class="d-block w-100" alt="comedor">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/comedor_3.jpg" class="d-block w-100" alt="comedor">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/baño_1.jfif" class="d-block w-100" alt="baño">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/baño_2.jpg" class="d-block w-100" alt="baño">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/baño_3.jpg" class="d-block w-100" alt="baño">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 col-lg-4 d-none d-md-block">
+                <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="./images/dormitorio.jfif" class="d-block w-100" alt="dormitorio">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/dormitorio2.jpg" class="d-block w-100" alt="dormitorio">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/dormitorio3.jpg" class="d-block w-100" alt="dormitorio">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/exterior.jfif" class="d-block w-100" alt="exterior">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/exterior2.jpg" class="d-block w-100" alt="exterior">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="./images/exterior3.jpg" class="d-block w-100" alt="exterior">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin del carrusel de 3 imagenes -->
+        
+        <!-- Inicio del carrusel unico para dispositivos moviles/pantallas pequeñas -->
+        <div class="col-12 d-md-none">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-pause="false" data-bs-interval="2000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/cocina.jfif" class="d-block w-100" alt="cocina">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/cocina_1.jfif" class="d-block w-100" alt="cocina">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/cocina_2.jpg" class="d-block w-100" alt="cocina">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/comedor.jfif" class="d-block w-100" alt="comedor">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/comedor_2.jpg" class="d-block w-100" alt="comedor">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/comedor_3.jpg" class="d-block w-100" alt="comedor">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/dormitorio.jfif" class="d-block w-100" alt="dormitorio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/dormitorio2.jpg" class="d-block w-100" alt="dormitorio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/dormitorio3.jpg" class="d-block w-100" alt="dormitorio">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/liviing.jfif" class="d-block w-100" alt="living">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/living2.jpg" class="d-block w-100" alt="living">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/living3.jpg" class="d-block w-100" alt="living">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/baño_1.jfif" class="d-block w-100" alt="baño">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/baño_2.jpg" class="d-block w-100" alt="baño">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/baño_3.jpg" class="d-block w-100" alt="baño">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/exterior.jfif" class="d-block w-100" alt="exterior">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/exterior2.jpg" class="d-block w-100" alt="exterior">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/exterior3.jpg" class="d-block w-100" alt="exterior">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Fin del carrusel unico para dispositivos moviles/pantallas pequeñas -->
+    </div>
+
+        <footer class="bg-2">
+            <article class="container-fluid bg-white p-5">
+                <h2 class=""></h2>
+            </article>
+            <!-- Inicio contenido del footer para dispositivos medianas/grandes -->
+            <section class="container-fluid d-none d-md-flex row pt-3 lc-1">
+                <div class="col-xl-3 col-md-4">
+                    <ul class="text-left mb-5">
+                        <li>
+                            <h4 class="text-center">Categorias</h4>
+                            <hr class="mb-4">
+                        </li>
+                        <li>
+                            <a href="#">Muebles para la cocina</a>
+                        </li>
+                        <li>
+                            <a href="#">Muebles para el comedor</a>
+                        </li>
+                        <li>
+                            <a href="#">Muebles para el dormitorio</a>
+                        </li>
+                        <li>
+                            <a href="#">Muebles para el living</a>
+                        </li>
+                        <li>
+                            <a href="#">Muebles para el baño</a>
+                        </li>
+                        <li>
+                            <a href="#">Muebles de exterior</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-md-4">
+                    <ul class="text-left">
+                        <li>
+                            <h4 class="text-center">Nosotros</h4>
+                            <hr class="mb-4">
+                        </li>
+                        <li>
+                            <a href="#">Preguntas fecuentes</a>
+                        </li>
+                        <li>
+                            <a href="#">Nuestra historia</a>
+                        </li>
+                        <li>
+                            <a href="#">Nuestra vision</a>
+                        </li>
+                        <li>
+                            <a href="#">Nuestras politicas</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-md-4 mb-5">
+                    <ul class="text-left">
+                        <li>
+                            <h4 class="text-center">Contacto</h4>
+                            <hr class="mb-4">
+                        </li>
+                        <li>
+                            <a href="#">+541155446677</a>
+                        </li>
+                        <li>
+                            <p>Avenida San Martín 984 P7 <br>Ciudad Autónoma de Buenos Aires<br>Argentina <a href="https://maps.app.goo.gl/psmzPd1sbZ1fE9mG9" target="_blank"><i class="fa-solid fa-location-dot"></i></a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-xl-3 col-lg-12 mb-5">
+                    <ul class="text-left">
+                        <li>
+                            <h4 class="text-center">Seguinos!</h4>
+                            <hr class="mb-4">
+                        </li>
+                        <li class="d-flex justify-content-around">
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjjs-bf0cyIAxXLuZUCHTtuEIAQFnoECAgQAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449" target="_blank"><i class="fa-brands fa-square-instagram fs-1"></i></a> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiK_Jn30cyIAxUApZUCHTsjAWYQFnoECAsQAQ&url=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA&usg=AOvVaw1I60-Ja6y72-wCvsxEihv7&opi=89978449" target="_blank"><i class="fa-brands fa-square-facebook fs-1"></i></a> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1-8aK0syIAxVrl5UCHcyjMRcQFnoECBgQAQ&url=https%3A%2F%2Ftwitter.com%2F%3Flang%3Des&usg=AOvVaw3YX5z3gmuFXXOazOkLuKS1&opi=89978449" target="_blank"><i class="fa-brands fa-square-twitter fs-1"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <p class="col-12 text-center">Pagina creada por Gabryte 2024 <i class="fa-solid fa-registered"></i></i></p>
+                </div>
+            </section>
+            <!-- Fin contenido del footer para dispositivos medianas/grandes -->
+            
+            <!-- Inicio contenido del footer para dispositivos celulares -->
+            <section class="container-fluid d-md-none row text-center pt-5 lc-1">
+                <div class="">
+                    <ul class="mb-4">
+                        <li class="mb-3">
+                            <a href=""><h4>Productos</h4></a>
+                        </li>
+                        <li class="mb-3">
+                            <a href=""><h4>Servicios</h4></a>
+                        </li>
+                        <li class="mb-3">
+                            <a href=""><h4>Preguntas frecuentes</h4></a>
+                        </li>
+                        <li class="mb-3">
+                            <a href=""><h4>Nuestra historia</h4></a>
+                        </li>
+                        <li class="mb-3">
+                            <a href=""><h4>Nuestras politicas</h4></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul>
+                        <li>
+                            <h4>Contacto</h4>
+                        </li>
+                        <li>
+                            <a href="#">+541155446677</a>
+                        </li>
+                        <li>
+                            <p>Avenida San Martín 979 <br> Ciudad Autónoma de Bs.As<br>Buenos aires, Argentina <a href="https://maps.app.goo.gl/psmzPd1sbZ1fE9mG9" target="_blank"><i class="fa-solid fa-location-dot"></i></a></p>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <ul class="text-left">
+                        <li>
+                            <h4>Seguinos!</h4>
+                        </li>
+                        <li class="d-flex justify-content-around">
+                            <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&ved=2ahUKEwjjs-bf0cyIAxXLuZUCHTtuEIAQFnoECAgQAQ&url=https%3A%2F%2Fwww.instagram.com%2F&usg=AOvVaw1cBeRoOpMhZ3-x5M1sA3Fm&opi=89978449" target="_blank"><i class="fa-brands fa-square-instagram fs-1"></i></a> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwiK_Jn30cyIAxUApZUCHTsjAWYQFnoECAsQAQ&url=https%3A%2F%2Fwww.facebook.com%2F%3Flocale%3Des_LA&usg=AOvVaw1I60-Ja6y72-wCvsxEihv7&opi=89978449" target="_blank"><i class="fa-brands fa-square-facebook fs-1"></i></a> <a href="https://www.google.com/url?sa=t&rct=j&q=&esrc=s&source=web&cd=&cad=rja&uact=8&ved=2ahUKEwj1-8aK0syIAxVrl5UCHcyjMRcQFnoECBgQAQ&url=https%3A%2F%2Ftwitter.com%2F%3Flang%3Des&usg=AOvVaw3YX5z3gmuFXXOazOkLuKS1&opi=89978449" target="_blank"><i class="fa-brands fa-square-twitter fs-1"></i></a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <p>Pagina creada por Grabyte 2024 <i class="fa-solid fa-registered"></i></i></p>
+                </div>
+            </section>
+            <!-- Fin del contenido footer para dispositivos celulares -->
+        </footer>
+    </main>
+</body>
+</html>
