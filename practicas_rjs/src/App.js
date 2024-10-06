@@ -1,8 +1,13 @@
 import './App.css';
+import { FirtsComponent } from './components/FirstComponent';
+
 function App() {
+  let name = <h1>Ricardo website</h1>
+
   return (
     <div className="App">
-      <h1>Hola mundo!!!</h1>
+      {name}
+      <FirtsComponent></FirtsComponent>
     </div>
   );
 }
