@@ -6,11 +6,17 @@ import { checkWinnerFrom } from './logic/board';
 import { WinnerModal } from './components/WinnerModal';
 
 function App() {
-  const [board, setBoard] = useState(
-    Array(9).fill(null)
-  );
+  const [board, setBoard] = useState(() => {
+    const boardFromStorage = window.localStorage.getItem('board');
+    if (boardFromStorage) return JSON.parse(boardFromStorage)
+      return Array(9).fill(null)
+  });
 
-  const [turn, setTurn] = useState(TURNS.X);
+  const [turn, setTurn] = useState(() => {
+    const turnFromStorage = window.localStorage.getItem('turn');
+    if (turnFromStorage) return turnFromStorage
+      return TURNS.X
+  });
     //El estado inicial de null es que no hay ganador y false es que hubo un empate y toca reiniciar el juego.
   const [winner, setWinner] = useState(null);
 
@@ -24,6 +30,9 @@ function App() {
     //la logica para cambiar el turno
     const newTurn = turn === TURNS.X ? TURNS.O : TURNS.X
     setTurn(newTurn);
+    //logica para guardar la partida en el local storage
+    window.localStorage.setItem('board', JSON.stringify(newBoard));
+    window.localStorage.setItem('turn', newTurn)
     //revisamos si hay un ganador
     const newWinner = checkWinnerFrom(newBoard);
     if (newWinner) {
@@ -42,6 +51,8 @@ function App() {
     setBoard(Array(9).fill(null));
     setTurn(TURNS.X);
     setWinner(null);
+    window.localStorage.removeItem('board');
+    window.localStorage.removeItem('turn');
   };
 
   return (
