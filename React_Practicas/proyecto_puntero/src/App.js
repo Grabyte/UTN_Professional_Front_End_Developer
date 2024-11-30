@@ -23,6 +23,16 @@ function App () {
     }
   }, [enable])
 
+  useEffect(() => {
+    if (enable) {
+      document.body.classList.toggle('no-cursor')
+    }
+
+    return () => {
+      document.body.classList.remove('no-cursor')
+    }
+  }, [enable])
+
   const activeStyle = {
     position: 'absolute',
     backgroundColor: 'rgba(0, 0, 0, 0.5)',
