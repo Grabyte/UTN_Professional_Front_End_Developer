@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Trabajo Integrador</title>
+</head>
+<body>
+    <section >
+        <h2>Recetario</h2>
+        <form action="">
+            <label for="palabra">Ingrese el nombre del plato y seleccione si quiere saber su receta</label>
+            <input id="recetario"  type="text" name="palabra" >
+            
+        </form>
+
+        <button id="boton" onclick="mostrarReceta()">receta</button>        
+
+        <div id="recuadroVerde">
+        
+        </div>
+    </section>
+
+    <section>
+        <h2>Sacando palabras</h2>
+            <p id="parrafo"></p>
+        <form action="">
+            <input type="text" id ="inpufrase">        
+        </form> 
+        <button id="botonejercicio4" onclick="sacarPalabra()">sacar</button>
+    </section>
+
+
+    <section>
+        <h2>Sorpresa</h2>
+        <div class="tema">
+            <h3 class="sorpresa" onmouseover="mostrarPayaso()">sorpresa</h3>
+        </div>
+        
+    </section>    
+    <section>
+        <h2>Puntos y habilidades</h2>
+        <div class="card">
+            <h3>Guerrero Medieval</h3>
+            <img src="./imagenes/guerrero.png" alt="guerrero medieval">
+            <p>Este personaje tiene la posibilidad de ser muy fuerte,y gana 50 puntos por cada punto de fuerza</p>
+            <p>Cada vez que sumamos fuerza obtenemos:<strong id="idSpan">50 puntos</strong></p>
+            <button class="botonSumar" onclick="sumarFuerza()" >Sumar fuerza</button>
+            
+        </div>
+        <div class="zona2">
+            <button class="botonRestar" onclick="sacarFuerza()">Restar fuerza</button>
+            <div class="total">
+                <p id="idTotal">TOTAL puntos adquiridos:</p>
+            </div>
+        </div>
+    </section>
+
+<script src="./script.js"></script>
+</body>
+</html>
