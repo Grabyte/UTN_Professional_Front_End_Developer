@@ -15,6 +15,10 @@ li {
     list-style-type: none;
 }
 
+.principal__container {
+    min-width: 350px;
+}
+
 /* Clases genericas */
 .bg-1 {
     background-color: #DADDE2;
@@ -49,6 +53,7 @@ li {
     otras alternativas, combinar multiples forma de que no se rompan las cosas por el texto o utilizar JS para lograr un resulta similar */
     display: -webkit-box;
     -webkit-line-clamp: 7; 
+    line-clamp: 7;
     -webkit-box-orient: vertical;
     overflow: hidden;
     text-overflow: ellipsis;
