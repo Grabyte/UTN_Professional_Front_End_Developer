@@ -47,16 +47,16 @@ nav{
     display: block;
 }
 .menu{
- display: flex;
- width: 300px;
- justify-content: space-around;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
 }
 main{
     padding: 100px 20px;
 }
 .item-menu{
- list-style-type: none;
- 
+    list-style-type: none;
+
 }
 .item-link{
     text-decoration: none;
@@ -83,7 +83,7 @@ main{
 }
 
 .flexItem{
- display: block;
+    display: block;
 }
 
 /*----- logo ------*/
@@ -154,13 +154,13 @@ line.cod{
 
 
 header{
- background: url(imagenes/fondo.jpg) 50% 0 fixed ;
- background-size: cover;
- height: 100vh;
- display: flex;
- flex-direction: column;
- align-items: center;
- justify-content: center;
+    background: url(imagenes/fondo.jpg) 50% 0 fixed ;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 
 }
 #header-2{
@@ -200,26 +200,26 @@ h2{
     color: var(--colorDark)
 }
 .titulo-blanco{
- text-align: center;
+    text-align: center;
 }
 
 .cont-padre{
     margin: 100px 0px;
- width: 100%;
- display: flex;
- justify-content: space-evenly;
- gap: 20px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
 }
 
 .card{
- width: 450px;
- height: 500px;
- gap: 40px;
- background-color: var(--colorLight);
- display: flex;
- flex-direction: column;
- justify-content: space-between;
- align-items: center;
+    width: 450px;
+    height: 500px;
+    gap: 40px;
+    background-color: var(--colorLight);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .desc-card{
@@ -230,16 +230,16 @@ color:#181D31;
 }
 
 .img-card{
- width: 100%;
- margin: 0px;
+    width: 100%;
+    margin: 0px;
 
 }
 
 .boton-ver{
     padding: 10px ;
-   background-color: var(--colorDark);
-   text-align: center;
-   text-transform: uppercase;
+    background-color: var(--colorDark);
+    text-align: center;
+    text-transform: uppercase;
     text-decoration: none;
     width: 80%;
     margin-bottom: 20px;
@@ -264,11 +264,10 @@ footer{
 }
 
 .footer-left{
- display: flex;
- justify-content: space-between;
- width:300px;
- height: 60px;
- 
+    display: flex;
+    justify-content: space-between;
+    width:300px;
+    height: 60px;
 }
 
 .titulo-foot{
@@ -333,7 +332,7 @@ footer{
 }
 
 #play,#pause{
-   width: 80px;
+    width: 80px;
 }
 
 
@@ -342,26 +341,23 @@ footer{
     transform: translate(3px, 2px);
 }
 #showTime{
-   
     padding-right: 10px;
     font-family: Arial, Helvetica, sans-serif;
     color: white;
-   
-
 }
 /* ----------     hoja productos      ------------*/
 
 
 .card-prod{
- width: 250px;
- height: 480px;
+    width: 250px;
+    height: 480px;
 }
 .titulo-prod{
- font-size: 20px;
+    font-size: 20px;
 }
 
 .img-prod{
- height: 221px;
+    height: 221px;
 }
 
 
